@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Shop Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1 class="mb-0">Shop Online</h1>
+            <nav class="mt-2">
+                <a href="carrito.html" id="cart-button" class="text-white me-3">Carrito</a>
+                <a href="#" class="text-white">Salir</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-0">Productos</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Filtro de búsqueda" aria-label="Filtro de búsqueda">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4"> <!-- Línea horizontal para separar la sección -->
+        </div>
+
+        <div class="container mb-4">
+            <div class="btn-group" id="category-buttons" role="group" aria-label="Filtros de categoría">
+                <!-- Los botones de categorías se insertarán aquí -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row product-list">
+                <!-- Las tarjetas de productos se insertarán aquí -->
+            </div>
+        </div>
+
+        <!-- Tabla del carrito -->
+        <div class="container mt-4" id="cart-table" style="display: none;">
+            <h3>Contenido del Carrito</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Numero</th>
+                        <th>Fecha</th>
+                        <th>Ver</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+                    <!-- Los datos del carrito se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2024 Shop Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
